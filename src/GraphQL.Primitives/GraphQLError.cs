@@ -19,6 +19,21 @@ public class GraphQLError : IEquatable<GraphQLError?>
     [DataMember(Name = "message")]
     public string Message { get; set; }
 
+    [DataMember(Name = "code")]
+    public int? Code { get; set; }
+
+    [DataMember(Name = "time_remaining")]
+    public string TimeRemaining { get; set; }
+
+    [DataMember(Name = "operation")]
+    public string Operation { get; set; }
+
+    [DataMember(Name = "required_credits")]
+    public int? RequiredCredits { get; set; }
+
+    [DataMember(Name = "remaining_credits")]
+    public int? RemainingCredits { get; set; }
+
     /// <summary>
     /// The Path of the error
     /// </summary>
